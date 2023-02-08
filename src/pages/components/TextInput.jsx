@@ -16,7 +16,7 @@ function TextInput({labelTitle,  type, defaultValue = '', placeholder, updateFor
             <label className="label">
                 <span className={"label-text text-base-content "}>{labelTitle}</span>
             </label>
-            <input type={type || "text"} value={value} placeholder={placeholder || ""} onChange={(e) => updateInputValue(e.target.value)}className="text-xs text-primary font-light placeholder-gray-gray4 px-2 pt-1.5 w-full " />
+            <input type={type || "text"} value={value} placeholder={placeholder || ""} onChange={(e) => updateInputValue(e.target.value)}className="input  input-bordered w-full " />
         </div>
     )
 }

@@ -4,6 +4,9 @@ import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom';
 import SearchResult from './pages/SearchResult';
 import Donate from './pages/Donate';
+import AdminAdminLogin from './pages/AdminLogin';
+import Login from './pages/Login';
+import NewStartup from './pages/NewStartup';
 
 
 
@@ -15,7 +18,11 @@ function App() {
       <Routes>
         <Route  path="/" element={<Landing />} />
         <Route  path="/search-result" element={<SearchResult />} />
+        <Route  path="/admin/login" element={<AdminAdminLogin />} />
+        <Route  path="/login" element={<Login />} />
         <Route  path="/startup/:id" element={<Donate />} />
+        <Route  path="/startup/create" element={<NewStartup />} />
+
         {/* <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} /> */}
